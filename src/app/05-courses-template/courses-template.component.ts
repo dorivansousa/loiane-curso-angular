@@ -1,5 +1,5 @@
 import { ThisReceiver } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-courses-template',
@@ -19,10 +19,6 @@ export class CoursesTemplateComponent {
     // for (let i = 0; i < this.courses.length - 1; i++) {
       // let c = this.courses[i];
     // }
-  }
-
-  ngOnInit() {
-    
   }
 
 }

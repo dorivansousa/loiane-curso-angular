@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'my-first-angular-cli-component-02',
+  selector: 'app-my-first-angular-cli-02-component',
   templateUrl: './my-first-angular-cli.component.html',
   styleUrls: ['./my-first-angular-cli.component.css']
 })
-export class MyFirstAngularCliComponent02 {
+export class MyFirstAngularCli02Component {
 
 }
