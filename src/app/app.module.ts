@@ -8,6 +8,7 @@ import { MyFirstModule } from './02-my-first/my-first.module';
 import { CoursesModule } from './04-courses/courses.module';
 import { MyFirstAngularCliComponent01 } from './01-my-first/my-first-angular-cli/my-first-angular-cli.component';
 import { MyFirstManuallyComponent01 } from './01-my-first/my-first-manually/my-first-manually.component';
+import { CoursesTemplateModule } from './05-courses-template/courses-template.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MyFirstManuallyComponent01 } from './01-my-first/my-first-manually/my-f
     AppRoutingModule,
     NgbModule,
     MyFirstModule,
-    CoursesModule
+    CoursesModule,
+    CoursesTemplateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
