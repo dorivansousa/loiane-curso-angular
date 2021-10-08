@@ -9,6 +9,7 @@ import { CoursesModule } from './04-courses/courses.module';
 import { MyFirstAngularCli01Component } from './01-my-first/my-first-angular-cli/my-first-angular-cli.component';
 import { MyFirstManually01Component } from './01-my-first/my-first-manually/my-first-manually.component';
 import { CoursesTemplateModule } from './05-courses-template/courses-template.module';
+import { CoursesDependenyInjectionModule } from './06-courses-dependency-injection/courses-depedency-injection.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CoursesTemplateModule } from './05-courses-template/courses-template.mo
     MyFirstModule,
     CoursesModule,
     CoursesTemplateModule,
+    CoursesDependenyInjectionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
