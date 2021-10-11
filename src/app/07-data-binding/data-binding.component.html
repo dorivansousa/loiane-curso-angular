@@ -1,0 +1,75 @@
+<section>
+    <article>
+        <h3>Class e Style Binding</h3>
+        <div>selecione uma classe:</div>
+        <select #selectClass (change)="0">
+            <option value="alert-primary">Primary</option>
+            <option value="alert-secondary">Secondary</option>
+            <option value="alert-success">Sucess</option>
+            <option value="alert-danger">Danger</option>
+            <option value="alert-warning">Warning</option>
+            <option value="alert-info">Info</option>
+            <option value="alert-light">Light</option>
+            <option value="alert-dark">Dark</option>
+        </select>
+        <br><br>
+        <div class="alert alert-danger" role="alert"
+          [style.display]="selectClass.value == 'alert-danger' ? 'block' : 'none'">
+            texto aparece somente em caso de erro
+        </div>
+        <div class="alert" role="alert" [class]="selectClass.value">
+            texto colorido conforme o valor da combobox propertbinding
+        </div>
+        <div class="alert {{ selectClass.value }}" role="alert">
+            texto colorido conforme o valor da combobox interpolacao
+        </div>        
+        <br><br>
+        <div class="alert" role="alert" [class.alert-primary]="selectClass.value == 'alert-primary'">
+            A simple primary alert—check it out!
+          </div>
+          <div class="alert" role="alert" [class.alert-secondary]="selectClass.value == 'alert-secondary'">
+            A simple secondary alert—check it out!
+          </div>
+          <div class="alert" role="alert" [class.alert-success]="selectClass.value == 'alert-success'">
+            A simple success alert—check it out!
+          </div>
+          <div class="alert" role="alert" [class.alert-danger]="selectClass.value == 'alert-danger'">
+            A simple danger alert—check it out!
+          </div>
+          <div class="alert" role="alert" [class.alert-warning]="selectClass.value == 'alert-warning'">
+            A simple warning alert—check it out!
+          </div>
+          <div class="alert" role="alert" [class.alert-info]="selectClass.value == 'alert-info'">
+            A simple info alert—check it out!
+          </div>
+          <div class="alert" role="alert" [class.alert-light]="selectClass.value == 'alert-light'">
+            A simple light alert—check it out!
+          </div>
+          <div class="alert" role="alert" [class.alert-dark]="selectClass.value == 'alert-dark'">
+            A simple dark alert—check it out!
+          </div>
+    </article>
+</section>
+
+<section>
+    <article>
+        <h3>* Interpolação</h3>
+        <p>Exibir variavel "{{ '{{ url }}' }}": {{ url }}</p>
+        <p>Calculo com interpolação "{{ '{{ 1 + 1}}' }}"= {{ 1 + 1 }}</p>
+        <p>Calculo com interpolação "{{ '{{ 1 + 1 + getValor}' }}"= {{ 1 + 1 + getValor()}}</p>
+        <p>Expressão boolean "{{ '{{ cursoAngular && getCursoAngular()}}' }}"= {{  cursoAngular && getCursoAngular() }}</p>
+        <p [textContent]="urlImage"></p>
+
+        <h2>** Imagens</h2>
+        <p [innerText]="tagImageInterpolation"></p>
+        <img src="{{ urlImage }}" alt="">
+
+        <h3>* Property Binding</h3>
+
+        <h2>** Imagens</h2>
+        <p [innerText]="tagImagePropertyBinding"></p>
+        <img [src]="urlImage" alt="">      
+        <img bind-src="urlImage" alt="">
+        
+    </article>
+</section>    

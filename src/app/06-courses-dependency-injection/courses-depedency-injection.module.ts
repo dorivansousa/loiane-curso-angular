@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoursesDependenyInjectionComponent } from './courses-depedency-injection.component';
 import { CourseDependenyInjectionDetailsComponent } from './course-depedency-injection-details/course-depedency-injection-details.component';
-import { CoursesDepedencyInjectionService } from './courses-depedency-injection.service';
+// import { CoursesDepedencyInjectionService } from './courses-depedency-injection.service';
 
 
 
