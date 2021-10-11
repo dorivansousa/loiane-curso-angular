@@ -1,4 +1,23 @@
-<section>
+<section class="event-binding">
+    <article>
+        <h3>Event Binding</h3>
+        <div>
+            <button class="btn btn-primary" (click)="onButtonClick()">Clique aqui</button>
+            <br><br>
+            <input #inputField type="text" 
+                (keyup)="onInputKeyUp($event)"
+                (keyup.enter)="onInputKeyUpEnter(inputField.value)"
+                (blur)="onInputKeyUpEnter(inputField.value)"> 
+            <p>Valor Digitado: {{ inputValue }}</p>
+            <p>Valor Salvo: {{ inputValueSave }}</p>
+        </div>
+        <span (mouseover)="onMouseOverOut()"
+              (mouseout)="onMouseOverOut()"
+             [class.highlight]="isMouseOver">Passe o Mouse aqui</span>
+    </article>
+</section>
+
+<section class="class-style-binding">
     <article>
         <h3>Class e Style Binding</h3>
         <div>selecione uma classe:</div>
@@ -51,7 +70,7 @@
     </article>
 </section>
 
-<section>
+<section class="property-binding-interpolation">
     <article>
         <h3>* Interpolação</h3>
         <p>Exibir variavel "{{ '{{ url }}' }}": {{ url }}</p>
