@@ -12,6 +12,7 @@ import { MyFirstManually01Component } from './01-my-first/my-first-manually/my-f
 import { CoursesTemplateModule } from './05-courses-template/courses-template.module';
 import { CoursesDependenyInjectionModule } from './06-courses-dependency-injection/courses-depedency-injection.module';
 import { DataBindingComponent } from './07-data-binding/data-binding.component';
+import { DataBindingFormModule } from './08-data-binding-form/data-binding-form.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { DataBindingComponent } from './07-data-binding/data-binding.component';
     CoursesTemplateModule,
     CoursesDependenyInjectionModule,
     FormsModule,
+    DataBindingFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]
