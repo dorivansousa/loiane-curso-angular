@@ -1,8 +1,8 @@
 <app-input-property [name]="inputName"></app-input-property>
 
 <app-output-property
-    [initialValue]="5"
-    (onChangeValue)="onChangeValue($event)"
+    [value]="5"
+    (ChangeValue)="onChangeValue($event)"
 ></app-output-property>
 
 <p>Valor "{{ outputValue }}" do Componente output-property lido pelo componente pai</p>

@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-data-binding-form',
   templateUrl: './data-binding-form.component.html',
   styleUrls: ['./data-binding-form.component.css']
 })
-export class DataBindingFormComponent implements OnInit {
+export class DataBindingFormComponent {
 
   person: any = {
     name: 'Dorivan',
@@ -14,7 +14,5 @@ export class DataBindingFormComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
 }

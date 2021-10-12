@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { toInteger } from '@ng-bootstrap/ng-bootstrap/util/util';
 
 @Component({
@@ -6,7 +6,7 @@ import { toInteger } from '@ng-bootstrap/ng-bootstrap/util/util';
   templateUrl: './data-binding.component.html',
   styleUrls: ['./data-binding.component.css']
 })
-export class DataBindingComponent implements OnInit {
+export class DataBindingComponent {
 
   person: any = {
     name: 'Dorivan',
@@ -51,9 +51,6 @@ export class DataBindingComponent implements OnInit {
 
   onMouseOverOut() {
     this.isMouseOver = !this.isMouseOver;
-  }
-
-  ngOnInit(): void {
   }
 
 }
