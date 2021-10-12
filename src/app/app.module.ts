@@ -13,6 +13,7 @@ import { CoursesTemplateModule } from './05-courses-template/courses-template.mo
 import { CoursesDependenyInjectionModule } from './06-courses-dependency-injection/courses-depedency-injection.module';
 import { DataBindingComponent } from './07-data-binding/data-binding.component';
 import { DataBindingFormModule } from './08-data-binding-form/data-binding-form.module';
+import { InputOutputPropertiesModule } from './09-input-output-properties/input-output-properties.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DataBindingFormModule } from './08-data-binding-form/data-binding-form.
     CoursesTemplateModule,
     CoursesDependenyInjectionModule,
     FormsModule,
-    DataBindingFormModule
+    DataBindingFormModule,
+    InputOutputPropertiesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

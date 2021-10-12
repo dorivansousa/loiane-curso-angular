@@ -1,0 +1,14 @@
+div {
+    margin-left: 20px;
+}
+button {
+    margin: 5px;
+}
+
+input {
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+    background-color: rgb(241, 241, 144);
+    border-color: yellow;
+}
