@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ import { DataBindingComponent } from './07-data-binding/data-binding.component';
     CoursesModule,
     CoursesTemplateModule,
     CoursesDependenyInjectionModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

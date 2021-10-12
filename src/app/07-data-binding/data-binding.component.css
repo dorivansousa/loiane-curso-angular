@@ -2,3 +2,7 @@
     background-color: yellow;
     font-weight: bold;
 }
+hr {
+    /* border-top-width: 5px; */
+	border: 2px solid; 	
+}

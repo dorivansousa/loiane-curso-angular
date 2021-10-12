@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { toInteger } from '@ng-bootstrap/ng-bootstrap/util/util';
 
 @Component({
   selector: 'app-data-binding',
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
+  person: any = {
+    name: 'Dorivan',
+    age: 20
+  }
+
+  name: String = 'abc';
   url: String;
   cursoAngular: Boolean = true;
   urlImage: String = 'http://lorempixel.com/100/100/nature';

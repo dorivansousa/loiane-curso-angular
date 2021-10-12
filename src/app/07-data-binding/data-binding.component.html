@@ -1,3 +1,32 @@
+<section class="two-way-databing">
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <h5>Value e Input</h5>
+      <input #inputName type="text"
+        [value]="name"
+        (input)="name = inputName.value"
+      >
+      <h5>ngModel e ngModelChange</h5>
+      <input #inputName type="text"
+        [ngModel]="name"
+        (ngModelChange)="name = inputName.value"
+      >
+      <h5>Two-way databing {{ '[(name)]' }} (Banana in the box)</h5>
+      <input #inputName type="text"
+        [(ngModel)]="name"
+      >
+
+      <h5>Objeto Person</h5>
+      <input #inputName type="text"[(ngModel)]="person.name">      
+      <input #inputName type="text"[(ngModel)]="person.age">      
+
+      <p>Voce digitou um Nome {{ name }}</p>
+      <p>Voce digitou um Nome da Pessoa {{ person.name }} com idade: {{ person.age }} </p>
+    </div>
+  </article>
+</section>
+<hr />
 <section class="event-binding">
     <article>
         <h3>Event Binding</h3>
@@ -16,7 +45,7 @@
              [class.highlight]="isMouseOver">Passe o Mouse aqui</span>
     </article>
 </section>
-
+<hr />
 <section class="class-style-binding">
     <article>
         <h3>Class e Style Binding</h3>
@@ -69,7 +98,7 @@
           </div>
     </article>
 </section>
-
+<hr />
 <section class="property-binding-interpolation">
     <article>
         <h3>* Interpolação</h3>
@@ -91,4 +120,5 @@
         <img bind-src="urlImage" alt="">
         
     </article>
-</section>    
+</section>
+<hr />
