@@ -14,6 +14,7 @@ import { CoursesDependenyInjectionModule } from './06-courses-dependency-injecti
 import { DataBindingComponent } from './07-data-binding/data-binding.component';
 import { DataBindingFormModule } from './08-data-binding-form/data-binding-form.module';
 import { InputOutputPropertiesModule } from './09-input-output-properties/input-output-properties.module';
+import { DiretivasModule } from './10-diretivas/diretivas.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { InputOutputPropertiesModule } from './09-input-output-properties/input-
     CoursesDependenyInjectionModule,
     FormsModule,
     DataBindingFormModule,
-    InputOutputPropertiesModule
+    InputOutputPropertiesModule,
+    DiretivasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
