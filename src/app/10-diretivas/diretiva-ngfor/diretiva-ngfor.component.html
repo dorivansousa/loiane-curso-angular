@@ -1,1 +1,9 @@
-<p>diretiva-ngfor works!</p>
+<h4>NgFor</h4>
+<div>
+    <ul>
+        <li *ngFor="let course of courses, let i = index">
+            {{ i + 1 }} - {{ course }}
+        </li>
+    </ul>
+</div>
+ 
