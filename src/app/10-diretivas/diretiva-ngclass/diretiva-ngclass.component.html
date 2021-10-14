@@ -1,1 +1,15 @@
-<p>diretiva-ngclass works!</p>
+<h1>
+    <i class="bi"
+        [class.bi-bookmark-star]="myFavorite"
+        [class.bi-bookmark-x]="!myFavorite"
+         (click)="onClick()"
+    ></i>
+
+    <i class="bi"
+        [ngClass]="{
+            'bi-bookmark-star': myFavorite,
+            'bi-bookmark-x': !myFavorite
+        }"
+        (click)="onClick()"
+    ></i>
+</h1>
