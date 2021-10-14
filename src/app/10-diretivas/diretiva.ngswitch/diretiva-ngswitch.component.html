@@ -32,3 +32,16 @@
         Home
     </p>
   </div>
+  <p>usando template</p>
+
+  <div class="container" [ngSwitch]="tab">
+    <ng-template [ngSwitchCase]="'mapa'">
+      <p>Mapa</p>
+    </ng-template>
+    <ng-template [ngSwitchCase]="'lista'">
+      <p>Lista</p>
+    </ng-template>
+    <ng-template ngSwitchDefault>
+      <p>Home</p>
+    </ng-template>
+  </div>

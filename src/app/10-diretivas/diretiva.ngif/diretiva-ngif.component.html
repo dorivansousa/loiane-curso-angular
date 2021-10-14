@@ -25,3 +25,13 @@
 <div [hidden]="showCourses">
     Lista de cursos oculta
 </div>
+<br>
+<p>usando templates</p>
+
+<ng-template [ngIf]="showCourses"]>
+    <div>Lista de Cursos aqui.</div>
+</ng-template>
+
+<!-- <div ng-template="ngIf showCourses"> -->
+    <!-- Lista de Cursos aqui. -->
+<!-- </div> -->
