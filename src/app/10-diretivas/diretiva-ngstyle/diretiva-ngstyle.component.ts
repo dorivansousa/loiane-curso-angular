@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivaNgstyleComponent implements OnInit {
 
+  active: boolean = false;
+  fontSize: number = 18;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onIncrease() {
+    this.fontSize++;
+  }
+
+  onDecrease() {
+    this.fontSize--;
+  }
+
+  onClick() {
+    this.active = !this.active
+  }
 }

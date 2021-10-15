@@ -1,1 +1,23 @@
-<p>diretiva-ngstyle works!</p>
+<h5>NgStyle</h5>
+<button
+  [style.backgroundColor]="active ? 'blue' : 'gray'"
+  [style.color]="active ? 'white' : 'black'"
+  [style.fontWeight]="active ? 'bold' : 'normal'"
+  [style.fontSize]="fontSize + 'px'"
+  (click)="onClick()"
+>
+    Mudar atributo 'ativo'
+</button>
+<button class='btn btn-primary' (click)="onIncrease()">+</button>
+<button class='btn btn-primary' (click)="onDecrease()">-</button>
+<button
+  [ngStyle]="{
+      'backgroundColor': active ? 'blue' : 'gray',
+      'color': active ? 'white' : 'black',
+      'fontWeight': active ? 'bold' : 'normal',
+      'fontSize': fontSize + 'px' 
+    }"  
+>
+    Mudar atributo 'ativo'
+</button>
+<input type="text" [(ngModel)]="fontSize">

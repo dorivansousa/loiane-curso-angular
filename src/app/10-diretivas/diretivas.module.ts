@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 import { DiretivaNgIf } from './diretiva.ngif/diretiva-ngif.component';
 import { DiretivasComponent } from './diretivas.component';
 import { DiretivaNgswitchComponent } from './diretiva.ngswitch/diretiva-ngswitch.component';
@@ -19,7 +21,8 @@ import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.co
     DiretivaNgstyleComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     DiretivasComponent,
