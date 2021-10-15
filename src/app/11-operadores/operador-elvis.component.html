@@ -1,1 +1,4 @@
-<p>operador-elvis works!</p>
+<h3>Operador Elvis!</h3>
+<p>Descrição: {{ task.description}} </p>
+<p>Responsável (operador elvis "?"): {{ task.owner?.name}} </p>
+<p>Responsável (ternário "? :"): {{ task.owner != null ? task.owner.name : ""}} </p>

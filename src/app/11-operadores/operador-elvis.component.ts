@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OperadorElvisComponent implements OnInit {
 
+  task: any = {
+    description: "Descrição da Tarefa",
+    owner: null
+  }
+
   constructor() { }
 
   ngOnInit(): void {

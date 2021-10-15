@@ -16,6 +16,7 @@ import { DataBindingFormModule } from './08-data-binding-form/data-binding-form.
 import { InputOutputPropertiesModule } from './09-input-output-properties/input-output-properties.module';
 import { DiretivasModule } from './10-diretivas/diretivas.module';
 import { OperadorElvisComponent } from './11-operadores/operador-elvis.component';
+import { NgContentComponent } from './12-ng-content/ng-content.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { OperadorElvisComponent } from './11-operadores/operador-elvis.component
     MyFirstManually01Component,
     DataBindingComponent,
     OperadorElvisComponent,
+    NgContentComponent,
   ],
   imports: [
     BrowserModule,
