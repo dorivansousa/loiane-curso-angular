@@ -10,7 +10,7 @@
       <h5>ngModel e ngModelChange</h5>
       <input #inputName type="text"
         [ngModel]="name"
-        (ngModelChange)="name = inputName.value"
+        (ngModelChange)="name = $event" 
       >
       <h5>Two-way databing {{ '[(name)]' }} (Banana in the box)</h5>
       <input #inputName type="text"

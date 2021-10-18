@@ -17,6 +17,8 @@ import { InputOutputPropertiesModule } from './09-input-output-properties/input-
 import { DiretivasModule } from './10-diretivas/diretivas.module';
 import { OperadorElvisComponent } from './11-operadores/operador-elvis.component';
 import { NgContentComponent } from './12-ng-content/ng-content.component';
+import { BackgroundYellowDirective } from './13-shared/background-yellow.directive';
+import { CustomDirectivesModule } from './14-custom-directives/custom-directives.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { NgContentComponent } from './12-ng-content/ng-content.component';
     DataBindingComponent,
     OperadorElvisComponent,
     NgContentComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { NgContentComponent } from './12-ng-content/ng-content.component';
     FormsModule,
     DataBindingFormModule,
     InputOutputPropertiesModule,
-    DiretivasModule
+    DiretivasModule,
+    CustomDirectivesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
