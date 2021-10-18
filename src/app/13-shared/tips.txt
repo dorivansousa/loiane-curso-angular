@@ -1,0 +1,1 @@
+pra usar as diretivas em varios modulos precisa incluir a diretiva dentro de um modulo

@@ -19,6 +19,7 @@ import { OperadorElvisComponent } from './11-operadores/operador-elvis.component
 import { NgContentComponent } from './12-ng-content/ng-content.component';
 import { BackgroundYellowDirective } from './13-shared/background-yellow.directive';
 import { CustomDirectivesModule } from './14-custom-directives/custom-directives.module';
+import { SharedModule } from './13-shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { CustomDirectivesModule } from './14-custom-directives/custom-directives
     DataBindingFormModule,
     InputOutputPropertiesModule,
     DiretivasModule,
+    SharedModule,
     CustomDirectivesModule
   ],
   providers: [],

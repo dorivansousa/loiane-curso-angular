@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomDirectivesComponent } from './custom-directives.component';
-import { BackgroundYellowDirective } from '../13-shared/background-yellow.directive';
+import { SharedModule } from '../13-shared/shared.module';
 
 
 
 @NgModule({
   declarations: [
     CustomDirectivesComponent,
-    BackgroundYellowDirective,
   ],
   imports: [
     CommonModule,
+    SharedModule
+
   ],
   exports: [
     CustomDirectivesComponent
