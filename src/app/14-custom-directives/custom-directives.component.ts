@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomDirectivesComponent implements OnInit {
 
+  showCourses: Boolean = false;
+
   ngOnInit(): void {
+  }
+
+  onButtonClick() {
+    this.showCourses = !this.showCourses
   }
 
 }

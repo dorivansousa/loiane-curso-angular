@@ -5,3 +5,15 @@
 <p backgroundYellow highlightmouse>texto com highlight passando o mouse</p>
 
 <p [highlight]="'blue'" [defaultColor]="'yellow'">texto com highlight passando o mouse</p>
+
+<h4>Diretiva costumizada ngElse</h4>
+
+<div *ngIf="showCourses">
+    Mostrar Lista de Curos
+</div>
+
+<div *ngMyElse="showCourses">
+    Não Mostrar Lista de Curos
+</div>
+
+<button (click)="onButtonClick()">Mostrar/Exibir Cursos</button>
