@@ -20,6 +20,10 @@ import { NgContentComponent } from './12-ng-content/ng-content.component';
 import { BackgroundYellowDirective } from './13-shared/background-yellow.directive';
 import { CustomDirectivesModule } from './14-custom-directives/custom-directives.module';
 import { SharedModule } from './13-shared/shared.module';
+import { CoursesServiceComponent } from './15-courses-service/courses-service.component';
+import { CoursesServiceDependencyInjectionComponent } from './15-courses-service-dependency-injection/courses-service-dependency-injection.component';
+import { CoursesServiceDependencyInjection } from './15-courses-service-dependency-injection/courses-dependency-injection.service';
+import { CoursesNewComponent } from './15-courses-service-dependency-injection/courses-new/courses-new.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,9 @@ import { SharedModule } from './13-shared/shared.module';
     DataBindingComponent,
     OperadorElvisComponent,
     NgContentComponent,
-    
+    CoursesServiceComponent,
+    CoursesServiceDependencyInjectionComponent,
+    CoursesNewComponent,    
   ],
   imports: [
     BrowserModule,
@@ -46,7 +52,9 @@ import { SharedModule } from './13-shared/shared.module';
     SharedModule,
     CustomDirectivesModule
   ],
-  providers: [],
+  providers: [
+    CoursesServiceDependencyInjection
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
