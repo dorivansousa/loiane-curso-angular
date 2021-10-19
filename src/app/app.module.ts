@@ -21,9 +21,9 @@ import { BackgroundYellowDirective } from './13-shared/background-yellow.directi
 import { CustomDirectivesModule } from './14-custom-directives/custom-directives.module';
 import { SharedModule } from './13-shared/shared.module';
 import { CoursesServiceComponent } from './15-courses-service/courses-service.component';
-import { CoursesServiceDependencyInjectionComponent } from './15-courses-service-dependency-injection/courses-service-dependency-injection.component';
-import { CoursesServiceDependencyInjection } from './15-courses-service-dependency-injection/courses-dependency-injection.service';
-import { CoursesNewComponent } from './15-courses-service-dependency-injection/courses-new/courses-new.component';
+import { CoursesServiceDependencyInjectionComponent } from './16-courses-service-dependency-injection/courses-service-dependency-injection.component';
+import { CoursesServiceDependencyInjection } from './16-courses-service-dependency-injection/courses-dependency-injection.service';
+import { CoursesNewComponent } from './16-courses-service-dependency-injection/courses-new/courses-new.component';
 
 @NgModule({
   declarations: [
