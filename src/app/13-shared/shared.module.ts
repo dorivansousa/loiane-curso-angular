@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BackgroundYellowDirective } from './background-yellow.directive';
 import { HighlightmouseDirective } from './highlight-mouse.directive';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -9,13 +10,15 @@ import { HighlightmouseDirective } from './highlight-mouse.directive';
   declarations: [
     BackgroundYellowDirective,
     HighlightmouseDirective,
+    HighlightDirective,
   ],
   imports: [
     CommonModule
   ],
   exports: [
     BackgroundYellowDirective,
-    HighlightmouseDirective
+    HighlightmouseDirective,
+    HighlightDirective
   ]
 })
 export class SharedModule { }

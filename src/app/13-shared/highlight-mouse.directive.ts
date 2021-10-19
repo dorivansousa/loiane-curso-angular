@@ -1,4 +1,4 @@
-import { Directive, HostListener,ElementRef, Renderer2, HostBinding } from '@angular/core';
+import { Directive, HostListener, ElementRef, Renderer2, HostBinding } from '@angular/core';
 
 @Directive({
   selector: '[highlightmouse]'
@@ -30,6 +30,7 @@ export class HighlightmouseDirective {
   // @HostBinding('style.backgroundColor') backgroundColor: String;
 
   // caso precise maninupular algo
+  // @HostBinding('style.backgroundColor') backgroundColor; 
   @HostBinding('style.backgroundColor') get setColor() {
     return this.backgroundColor;
   }
@@ -40,5 +41,6 @@ export class HighlightmouseDirective {
     ) { 
       // console.log(_elementRef.nativeElement)
       this.initialBackgroudColor = _elementRef.nativeElement.style.backgroundColor;
+      this.backgroundColor = this.initialBackgroudColor;
     }
 }
